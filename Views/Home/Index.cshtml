@@ -1,0 +1,18 @@
+﻿@model List<Sach>
+@using KhangThanhNhu_241224485.Models
+
+<section class="main-content">
+    <div class="container">
+        <h2>KhangThanhNhu</h2>
+        <div class="product-list">
+            @foreach (var sach in Model)
+            {
+                <div class="product-item">
+                    <img src="~/images/@sach.Anh" alt="sach.TenSach"/>
+                    <h3>@sach.TenSach</h3>
+                    <p>Giá:@sach.Gia nghìn đồng</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
